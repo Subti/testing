@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #00ff00;
+  background-color: #0a0a0a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #0a0a0a;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  outline: none;
+}
+
+input:focus {
+  border-color: #00ff00;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+button {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #0a0a0a;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+  padding: 0.5em 2em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-left: 0.5em;
+}
+
+button:hover {
+  background-color: #00ff00;
+  color: #0a0a0a;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+textarea {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #0a0a0a;
+  color: #00ff00;
+  border: none;
+  outline: none;
+  resize: none;
+  font-size: 1em;
+  line-height: 1.6;
+  padding: 1em;
+}
+
+textarea::selection {
+  background-color: rgba(0, 255, 0, 0.3);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00ff00;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00cc00;
+}
